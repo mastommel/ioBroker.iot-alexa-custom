@@ -19,7 +19,7 @@ const clientId = 'iobroker-iot-alexa-1337-01';
 // Load your modules here, e.g.:
 // const fs = require("fs");
 
-class Template extends utils.Adapter {
+class IotAlexaCustom extends utils.Adapter {
 
     /**
      * @param {Partial<utils.AdapterOptions>} [options={}]
@@ -199,8 +199,8 @@ if (require.main !== module) {
     /**
      * @param {Partial<utils.AdapterOptions>} [options={}]
      */
-    module.exports = (options) => new Template(options);
+    module.exports = (options) => new IotAlexaCustom(options);
 } else {
     // otherwise start the instance directly
-    new Template();
+    new IotAlexaCustom();
 }
